@@ -112,7 +112,7 @@ padding-bottom: 10px;
   margin-bottom:15px ;
 }
 .todo-list-item{
-  background-color: var(--heading-color);
+background-color:#2d2d2f ;
 height: auto;
 justify-content: space-between;
 padding: 25px;
@@ -120,7 +120,8 @@ padding-bottom: 10px;
 padding-top: 10px;  
 margin-bottom: 10px;
 align-items: center;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+box-shadow: 0 0 10px rgba(250, 244, 244, 0.1);
+border-radius: 5px;
 
 
 }
@@ -134,7 +135,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 .todo-list-item p{
   font-size: 14px;
-  color: var(--secheading);
+  color: #6c6c6d;
   margin-top: 8px;
 }
 

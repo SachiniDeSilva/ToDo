@@ -106,17 +106,61 @@ padding-bottom: 10px;
 .todo-list{
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 .btn-area{
   margin-bottom:15px ;
 }
 .todo-list-item{
   background-color: var(--heading-color);
-  display: flex;
-  justify-content: space-between;
+height: auto;
+justify-content: space-between;
 padding: 25px;
 padding-bottom: 10px;
 padding-top: 10px;  
 margin-bottom: 10px;
+align-items: center;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
+
+}
+.todo-list-item h3{
+  font-size: 25px;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin: 0;
+
+}
+
+.todo-list-item p{
+  font-size: 14px;
+  color: var(--secheading);
+  margin-top: 8px;
+}
+
+.icon{
+  font-size: 25px;
+  cursor: pointer;
+}
+.icon:hover{
+  color: red;
+}
+.check-icon{
+  font-size: 25px;
+  margin-left: 10px;
+  color: var(--primary-color);
+  font-size: 35px;
+ 
+
+
+}
+.check-icon:hover{
+  color: #1d0232;
+}
+.todo-icons {
+  display: flex;
+  gap: 8px;
+ 
+ justify-content: space-between;
+ 
 }

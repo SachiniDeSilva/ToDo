@@ -117,8 +117,8 @@ function App() {
                     <p>{item.description}</p>
                   </div>
                   <div className="todo-icons">
-                    <AiOutlineDelete className="icon" onClick={() => handleDeleteTodo(index)} />
-                    <BsCheck className="check-icon" onClick={() => handleCompleteTodo(index)} />
+                    <AiOutlineDelete className="icon" title="Delete?" onClick={() => handleDeleteTodo(index)} />
+                    <BsCheck className="check-icon" title="Complete?" onClick={() => handleCompleteTodo(index)} />
                   </div>
                 </div>
               ))}

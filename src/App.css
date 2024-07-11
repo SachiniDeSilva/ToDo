@@ -135,7 +135,7 @@ border-radius: 5px;
 
 .todo-list-item p{
   font-size: 14px;
-  color: #6c6c6d;
+  color: #d2d2d4;
   margin-top: 8px;
 }
 
@@ -144,24 +144,25 @@ border-radius: 5px;
   cursor: pointer;
 }
 .icon:hover{
-  color: red;
+  color: rgb(245, 60, 60);
 }
 .check-icon{
   font-size: 25px;
   margin-left: 10px;
   color: var(--primary-color);
   font-size: 35px;
+  
  
 
 
 }
 .check-icon:hover{
-  color: #1d0232;
+  color:var(--secondory-color);
 }
 .todo-icons {
   display: flex;
   gap: 8px;
+justify-content: end;
  
- justify-content: space-between;
  
 }

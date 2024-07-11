@@ -36,9 +36,24 @@ function App() {
   };
 
   const handleCompleteTodo = (index) => {
+
+    let now = new Date();
+    let dd =now.getDate();
+    let mm = now.getMonth()+ 1;
+    let yyyy = now.getFullYear();
+    let h = now.getHours();
+    let m =now.getMinutes();
+    let s = now.getSeconds();
+    let completedOn = dd+'-' + mm + '-' + yyyy + 'at' + h + ':' + m + ':' + s;
+  let filteredItem ={
+    ...allTodos[index],
+    completedOn:completedOn
+  }
+
     let updatedTodoArr = allTodos.map((todo, i) => {
       if (i === index) {
         todo.isCompleted = !todo.isCompleted;
+        todo.completedOn = todo.isCompleted ? completedOn : null;
       }
       return todo;
     });
@@ -115,6 +130,9 @@ function App() {
                   <div className="todo-text">
                     <h3>{item.title}</h3>
                     <p>{item.description}</p>
+                    {item.isCompleted && item.completedOn && (
+                      <p className="completed-at">Completed at: {item.completedOn}</p>
+                    )}
                   </div>
                   <div className="todo-icons">
                     <AiOutlineDelete className="icon" title="Delete?" onClick={() => handleDeleteTodo(index)} />
